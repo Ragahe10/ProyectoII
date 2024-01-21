@@ -86,7 +86,52 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main class="w-100">
+        <section class=" d-flex flex-row flex-wrap p-4 justify-content-around">
+            <div class="mapa col-12 col-lg-6 p-4">
+                <!-- Columna Ubicacion -->
+                <h2 class="text-danger">Encuentranos en</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.4091344657927!2d-65.20966070576614!3d-26.836711152904805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1697157056446!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="formContacto col-12 col-lg-5 border border-secondary text-center p-4">
+                <!-- Columna Contacto -->
+                <h2 class="text-danger">Contáctanos</h2>
+                <form action="../html/404.html" method="post" class="col-lg-10 mx-auto">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre"
+                            maxlength="50" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$" required>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido"
+                            maxlength="50" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$" required>
+                        <label for="apellido">Apellido</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="tel" class="form-control" id="celular" name="celular" pattern="^[0-9]{10}$"
+                            placeholder="Celular" required>
+                        <label for="celular">Celular</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control" id="mail" name="email" placeholder="Email" required
+                            maxlength="60" pattern="/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)*(\.[a-z]{2,7})$/">
+                        <label for="mail" class="es-requerido">Email</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <textarea class="form-control" placeholder="Deja tu consulta aquí" id="mensaje" required
+                            maxlength="500"></textarea>
+                        <label for="mensaje" class="es-requerido">Deja tu consulta aquí</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger w-100">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer class="bg-dark text-light pt-4  px-4 w-100">
         <section class="d-flex flex-row justify-content-around flex-wrap mx-4">
             <article class="logo text-center">
