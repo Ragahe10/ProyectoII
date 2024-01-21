@@ -1,31 +1,11 @@
 
 /******* Common Element CSS Start ******/
-body {
-    font-family: 'Montserrat', sans-serif;
-  }
-  .clear {
-    clear: both;
-  }
   img {
     max-width: 100%;
     border: 0px;
   }
   ul, ol {
     list-style: none;
-  }
-  a {
-    text-decoration: none; /* Decoración de los links */
-    color: inherit;
-    outline: none;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-  }
-  a:focus, a:active, a:visited, a:hover {
-    text-decoration: none;
-    outline: none;
-  }
-  a:hover {
-    color: #a71c1c;
   }
   h3 {
     margin: 0 0 10px;
