@@ -16,7 +16,7 @@
     
     <title>Primer Web</title>  <!--Indica el titulo de la pestaña del navegador-->
     
-    <link rel="icon" href="..."> <!--Establece el icono o favicon que tendrá nuestra web-->
+    <link rel="icon" href="./media/img/logo.png"> <!--Establece el icono o favicon que tendrá nuestra web-->
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -84,7 +84,59 @@
         </nav>
     </header>
     <main>
-
+        <!-- Inicio Carrousel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="https://scontent.ftuc1-1.fna.fbcdn.net/v/t39.30808-6/364066105_782412740557815_1210515245877345593_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGVJOB89pWogM9grZr109nNZ3Q2A7hPVzVndDYDuE9XNQXtw-dWJvdRoBwvsEk1CP2lzP2pe_EryYV3HQoBdwaW&_nc_ohc=jyBWr7zVYvsAX8OkYWP&_nc_oc=AQkeKGizEoIjOO63_LU35PposWp52I6ShGSUX3dmvP3nUfLQhLZ1GGjjhDYX5DE8tqg&_nc_ht=scontent.ftuc1-1.fna&oh=00_AfDpvYr_TKXzBWGjTJtE0I34clqerPLAOBbG84tLGyvB-A&oe=65B226BD"
+                        class="d-block w-100 c-img" alt="Imagen de productos de rolling">
+                    <div class="carousel-caption top-0 mt-4 d-md-block">
+                        <p class="mt-4 fs-5 carrusel_p">Obtené artículos con nuestro sello</p>
+                        <h1 class="display-9 fw-bolder carrusel_h1">¡Ofertas exclusiva!</h1>
+                        <a href="./html/otros.html" target="_blank" class="btn btn-danger px-4 py-2 fs-6 mt-4 carrusel_a">Ir a la oferta</a>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="https://scontent.ftuc1-2.fna.fbcdn.net/v/t39.30808-6/326959493_893847481752215_2179989558997996232_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHw0-VmNI2k_WzrHLq5CQb-dgh7QBNITyV2CHtAE0hPJYyxVYAcBI3ovIYEbtq0hTfv1_VOIV3RwLHZ1-vEAHd5&_nc_ohc=TxPhARhgRJQAX9xnJof&_nc_ht=scontent.ftuc1-2.fna&oh=00_AfAyk_gOBbH0QZNmd1H8d0XZ3z0g8H5Is5F_7KVswX8etA&oe=65B30590" class="d-block w-100 c-img"
+                        alt="Imagen de clase en las oficinas de rolling">
+                    <div class="carousel-caption top-0 mt-4 d-md-block">
+                        <p class="mt-4 fs-5 carrusel_p">Participa de las charlas informativas</p>
+                        <h1 class="display-9 fw-bolder carrusel_h1">Workshops</h1>
+                        <a href="./html/workshops.html" target="_blank"
+                            class="btn btn-danger px-4 py-2 fs-6 mt-4 carrusel_a">Ir a la
+                            página</a>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="https://scontent.ftuc1-2.fna.fbcdn.net/v/t39.30808-6/268979004_1631505660527338_4265058809225674565_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c83dfd&_nc_eui2=AeHiFZN9w7MDJJC7tyW3GEN-r2xm2Pzu15evbGbY_O7Xl5uiU4wumyO6eBQ75WX5lKM-CEh_XNcA-grCNvJ6O88v&_nc_ohc=0GYM6E84i9cAX_b35NE&_nc_ht=scontent.ftuc1-2.fna&oh=00_AfDVPzVPfwEerr6qlrJXY4QYqQWZjTJ7SeClw1vYBsQK5Q&oe=65B1E224" class="d-block w-100 c-img"
+                        alt="Imagen de Pablo viendo su computadora">
+                    <div class="carousel-caption top-0 mt-4 d-md-block">
+                        <p class="mt-4 fs-5 carrusel_p">Accede a la llave para forjar tu futuro</p>
+                        <h1 class="display-9 fw-bolder carrusel_h1">Cursos</h1>
+                        <a href="./html/cursos.html" target="_BLANK"
+                            class="btn btn-danger px-4 py-2 fs-6 mt-4 carrusel_a">Ver
+                            promociones</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Fin Carrousel -->
     </main>
     <footer class="bg-dark text-light pt-4  px-4 w-100">
         <section class="d-flex flex-row justify-content-around flex-wrap mx-4">
@@ -95,10 +147,10 @@
             </article>
             <article class="redes-sociales">
                 <h4 class="text-danger">Nuestras redes</h4>
-                <a class="fs-3 m-2 text-light" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                <a class="fs-3 m-2 text-light" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-                <a class="fs-3 m-2 text-light" href="https://www.twitter.com/"><i class="bi bi-twitter-x"></i></a>
-                <a class="fs-3 m-2 text-light" href="https://www.gmail.com/"><i class="bi bi-envelope"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.instagram.com/rollingcodeschool/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.facebook.com/RollingCodeSchool/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.gmail.com/" target="_blank"><i class="bi bi-envelope"></i></a>
             </article>
             <article>
                 <h4 class="text-danger">Información</h4>
