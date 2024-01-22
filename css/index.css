@@ -21,6 +21,9 @@
   .game-section {
     padding: 30px 25px; /* Paddin con la pantalla (ArribaAbajo,DerIzq) */
   }
+  .game-section hr{
+    border: #ff2600 solid 2px;
+  }
   .game-section .owl-stage {
     margin: 5px 0px; /* Margen (Entre título y tarjeta, Inicio de tarjeta Izq) */
     display: flex;
