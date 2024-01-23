@@ -1,0 +1,34 @@
+h1{
+    color: #9c0000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+h2{
+    color: #9c0000;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+.contenedorTarjetas{
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+    
+}
+.card-img-top{
+    width: 250px;
+    height: 250px;
+    border-radius: 70%;
+    
+}
+.col{
+    text-align: center;
+    align-items: center;
+}
+.card-img-top{
+    margin: auto;
+
+}
