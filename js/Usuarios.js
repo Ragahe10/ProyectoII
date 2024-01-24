@@ -11,7 +11,7 @@ class Usuario {
 // localStorage.setItem('usuarios',JSON.stringify(usuarios));
 
 let usuarios = JSON.parse(localStorage.getItem('usuarios'));
-document.getElementById('regForm').addEventListener('submit',addUsuario(e),false);
+document.getElementById('regForm').addEventListener('submit',addUsuario,false);
 let usuarioActual = localStorage.getItem('usuario');
 if(usuarioActual){
     window.location.href = "../index.html";
