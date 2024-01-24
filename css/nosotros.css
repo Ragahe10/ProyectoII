@@ -32,3 +32,9 @@ h2{
     margin: auto;
 
 }
+@media (max-width: 600px){
+    .descripcion{
+        padding: 5px !important;
+        margin: 0px !important;
+    }
+}
