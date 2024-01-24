@@ -36,3 +36,11 @@ footer section article{
   }
   
   /* FIN CARRUSEL */
+  @media (max-width: 990px) {
+    #cont-usu{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+    }
+  }
