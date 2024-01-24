@@ -25,6 +25,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
     <!-- FIN BOOTSTRAP -->
     <link rel="stylesheet" href="../css/style.css"> <!--Vinculo con la hoja de estilos-->
+    <link rel="stylesheet" href="../css/login.css"> <!--Vinculo con la hoja de estilos-->
 </head>
 <body>
     <header class="position-sticky sticky-top">
@@ -82,9 +83,11 @@
         </nav>
     </header>
     <main>
-        <div class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
+        <div id="fondo" class="w-100 h-100">
+        </div>
+        <div class="contenido container py-5">
+            <div class="d-flex flex-row justify-content-center flex-wrap" >
+                <div class="col-md-6 p-4">
                     <h2 class="mb-4 text-center text-danger fw-bolder">Iniciar Sesión</h2>
                     <form id="loginForm" autocomplete="off">
                         <div class="mb-3">
@@ -100,8 +103,8 @@
                     </form>
                     <div id="mensaje" class="mt-3"></div>
                     <div class="contenedorEnlaces mb-3 mt-3">
-                        <span>¿No tienes una cuenta? <a href="../html/registro.html">Registrate</a></span>
-                        <span><a href="../html/404.html">Recuperar Contraseña</a></span>
+                        <span class="text-light">¿No tienes una cuenta? <a href="../html/registro.html">Registrate</a></span>
+                        <span class="text-danger"><a href="../html/404.html">Recuperar Contraseña</a></span>
                       </div>
                 </div>
             </div>
