@@ -1,0 +1,17 @@
+main{
+    position: relative;
+}
+.contenido {
+    position: relative;
+    z-index: 2;
+}
+#fondo{
+    background-image: url("../media/img/registro.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    filter: blur(5px);
+}
