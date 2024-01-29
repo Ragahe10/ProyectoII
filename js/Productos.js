@@ -1,8 +1,7 @@
 class Producto{
     static contador = 0;
     constructor(nombre, precio, categoria, imagen, descripcion, stock){
-        Producto.contador++;
-        this.codigo = this.contador;
+        this.codigo = ++Producto.contador;
         this.nombre = nombre;
         this.precio = precio;
         this.categoria = categoria;
