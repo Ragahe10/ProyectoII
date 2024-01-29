@@ -6,9 +6,9 @@ class Usuario {
         this.productos = [];
     }
 }
-// let administrador = new Usuario('admin','admin99@email.com','admin');
-// usuarios.push(administrador);
-// localStorage.setItem('usuarios',JSON.stringify(usuarios));
+let administrador = new Usuario('admin','admin99@email.com','admin');
+usuarios.push(administrador);
+localStorage.setItem('usuarios',JSON.stringify(usuarios));
 
 let usuarios = JSON.parse(localStorage.getItem('usuarios'));
 document.getElementById('regForm').addEventListener('submit',addUsuario,false);
