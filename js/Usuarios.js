@@ -6,11 +6,12 @@ class Usuario {
         this.productos = [];
     }
 }
-let administrador = new Usuario('admin','admin99@email.com','admin');
+let administrador = new Usuario('admin','admin99@gmail.com','admin');
+let usuarios = [];
 usuarios.push(administrador);
 localStorage.setItem('usuarios',JSON.stringify(usuarios));
 
-let usuarios = JSON.parse(localStorage.getItem('usuarios'));
+usuarios = JSON.parse(localStorage.getItem('usuarios'));
 document.getElementById('regForm').addEventListener('submit',addUsuario,false);
 let usuarioActual = localStorage.getItem('usuario');
 if(usuarioActual){
