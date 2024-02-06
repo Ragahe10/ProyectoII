@@ -88,12 +88,56 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed text-danger fw-bolder" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#Articulos" aria-expanded="false">
-                            Articulos
+                            data-bs-target="#Productos" aria-expanded="false">
+                            Productos
                         </button>
                     </h2>
-                    <div id="Articulos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"></div>
+                    <div id="Productos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="mostrarProductos">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Articulos"
+                                            aria-expanded="false">
+                                            Artículos
+                                        </button>
+                                    </h2>
+                                    <div id="Articulos" class="accordion-collapse collapse" data-bs-parent="#mostrarProductos">
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="mostrarArticulos">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Workshops"
+                                            aria-expanded="false">
+                                            Workshops
+                                        </button>
+                                    </h2>
+                                    <div id="Workshops" class="accordion-collapse collapse" data-bs-parent="#mostrarProductos">
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="mostrarWorkshops"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cursos"
+                                            aria-expanded="false">
+                                            Cursos
+                                        </button>
+                                    </h2>
+                                    <div id="Cursos" class="accordion-collapse collapse" data-bs-parent="#mostrarProductos">
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="mostrarCursos"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
