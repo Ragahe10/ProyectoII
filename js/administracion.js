@@ -1,18 +1,23 @@
-let usuarios = JSON.parse(localStorage.getItem('usuarios'));
-let contUsu = document.getElementById('mostrarUsuarios');
-mostrarUsuarios(contUsu, usuarios);
+let usuario = JSON.parse(localStorage.getItem('usuario'));
+if(usuario && usuario.rol === 'Administrador'){
+    let usuarios = JSON.parse(localStorage.getItem('usuarios'));
+    let contUsu = document.getElementById('mostrarUsuarios');
+    mostrarUsuarios(contUsu, usuarios);
 
-let articulos = JSON.parse(localStorage.getItem('articulos'));
-let contArticulos = document.getElementById('mostrarArticulos');
-mostrarProductos(contArticulos,articulos);
+    let articulos = JSON.parse(localStorage.getItem('articulos'));
+    let contArticulos = document.getElementById('mostrarArticulos');
+    mostrarProductos(contArticulos,articulos);
 
-let workshops = JSON.parse(localStorage.getItem('workshops'));
-let contWorkshops = document.getElementById('mostrarWorkshops');
-mostrarProductos(contWorkshops,workshops);
+    let workshops = JSON.parse(localStorage.getItem('workshops'));
+    let contWorkshops = document.getElementById('mostrarWorkshops');
+    mostrarProductos(contWorkshops,workshops);
 
-let cursos = JSON.parse(localStorage.getItem('cursos'));
-let contCursos = document.getElementById('mostrarCursos');
-mostrarProductos(contCursos,cursos);
+    let cursos = JSON.parse(localStorage.getItem('cursos'));
+    let contCursos = document.getElementById('mostrarCursos');
+    mostrarProductos(contCursos,cursos);
+}else{
+    location.href= "../index.html";
+}
 
 function mostrarUsuarios(contenedor, usuarios){
     for (let i = 0; i < usuarios.length; i++) {
