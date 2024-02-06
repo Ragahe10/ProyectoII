@@ -1,12 +1,13 @@
 class Usuario {
-    constructor(nombre, email, contrasenia){
+    constructor(rol, nombre, email, contrasenia){
+        this.rol = rol;
         this.nombre = nombre;
         this.email = email;
         this.contrasenia = contrasenia;
         this.productos = [];
     }
 }
-let administrador = new Usuario('admin','admin99@gmail.com','admin');
+let administrador = new Usuario('Administrador','admin','admin99@gmail.com','admin');
 let usuarios = [];
 usuarios.push(administrador);
 localStorage.setItem('usuarios',JSON.stringify(usuarios));
@@ -26,7 +27,7 @@ function addUsuario(event){
     if(existe(email)){
         document.getElementById('mensaje').innerHTML = '<div class="alert alert-danger">El correo ya fué registrado.</div>';
     }else{
-        let newUsu = new Usuario(nombre,email,contrasena);
+        let newUsu = new Usuario('',nombre,email,contrasena);
         usuarios.push(newUsu);
         localStorage.setItem('usuarios',JSON.stringify(usuarios));
         window.location.href = './login.html';
