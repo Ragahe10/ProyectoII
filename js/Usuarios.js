@@ -7,8 +7,7 @@ class Usuario {
         this.productos = [];
     }
 }
-let administrador = new Usuario('Administrador','admin','admin99@gmail.com','admin');
-let usuarios = [];
+let usuarios = localStorage.getItem('usuarios');
 usuarios.push(administrador);
 localStorage.setItem('usuarios',JSON.stringify(usuarios));
 

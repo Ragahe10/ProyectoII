@@ -10,6 +10,17 @@ class Producto{
         this.stock = stock;
     }
 }
+class Usuario {
+    constructor(rol, nombre, email, contrasenia){
+        this.rol = rol;
+        this.nombre = nombre;
+        this.email = email;
+        this.contrasenia = contrasenia;
+        this.productos = [];
+    }
+}
+let administrador = new Usuario('Administrador','admin','admin99@gmail.com','admin');
+let usuarios = [];
 // Carga de artículos
 var taza = new Producto(
     "Taza",
@@ -122,16 +133,18 @@ var React = new Producto(
     "El curso definitivo que te llevará de ser un principiante a convertirte en un experto en el desarrollo de interfaces dinámicas y reactivas. Este programa intensivo te sumergirá en el emocionante ecosistema de React, la biblioteca JavaScript líder para construir interfaces de usuario modernas..",
     101
 );
-var Sql = new Producto(
-    "SQL",
-    80000,
-    "Cursos",
-    "media/img/sql.jpg",
-    "Descubre el fascinante mundo de las bases de datos con nuestro curso. Este programa te sumergirá en los principios fundamentales del lenguaje SQL, equipándote con las habilidades esenciales para gestionar y manipular datos de manera eficiente.",
-    89
-);
-var cursos = [FullStack, React, BackEnd,Sql];
+// var Sql = new Producto(
+//     "SQL",
+//     80000,
+//     "Cursos",
+//     "media/img/sql.jpg",
+//     "Descubre el fascinante mundo de las bases de datos con nuestro curso. Este programa te sumergirá en los principios fundamentales del lenguaje SQL, equipándote con las habilidades esenciales para gestionar y manipular datos de manera eficiente.",
+//     89
+// );
+// var cursos = [FullStack, React, BackEnd,Sql];
+var cursos = [FullStack, React, BackEnd];
 //Fin carga de cursos
 localStorage.setItem('articulos',JSON.stringify(articulos));
 localStorage.setItem('workshops',JSON.stringify(workshops));
 localStorage.setItem('cursos',JSON.stringify(cursos));
+localStorage.setItem('codProd',Producto.contador);
