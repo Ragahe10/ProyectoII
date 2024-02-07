@@ -21,6 +21,8 @@ class Usuario {
 }
 let administrador = new Usuario('Administrador','admin','admin99@gmail.com','admin');
 let usuarios = [];
+usuarios.push(administrador);
+localStorage.setItem('usuarios',JSON.stringify(usuarios));
 // Carga de artículos
 var taza = new Producto(
     "Taza",
