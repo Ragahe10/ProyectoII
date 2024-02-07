@@ -77,12 +77,12 @@ if(usuario && usuario.rol === 'Administrador'){
             }
             contenedor.innerHTML +=`<div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#prod${i + productos[i].codigo}"
-                        aria-expanded="false" aria-controls="prod${i + productos[i].codigo}">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#prod${i +'-'+ productos[i].codigo}"
+                        aria-expanded="false" aria-controls="prod${i +'-'+ productos[i].codigo}">
                         ${productos[i].nombre}
                     </button>
                 </h2>
-                <div id="prod${i + productos[i].codigo}" class="accordion-collapse collapse" data-bs-parent="accordionExample">
+                <div id="prod${i +'-'+ productos[i].codigo}" class="accordion-collapse collapse" data-bs-parent="accordionExample">
                     <div class="accordion-body">
                         <div class="d-flex flex-wrap flex-row justify-content-around align-items-center">
                             <img src="${ruta}" alt="${productos[i].nombre}" height="300px">

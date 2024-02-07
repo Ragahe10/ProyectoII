@@ -143,8 +143,8 @@ var React = new Producto(
 //     "Descubre el fascinante mundo de las bases de datos con nuestro curso. Este programa te sumergirá en los principios fundamentales del lenguaje SQL, equipándote con las habilidades esenciales para gestionar y manipular datos de manera eficiente.",
 //     89
 // );
-// var cursos = [FullStack, React, BackEnd,Sql];
-var cursos = [FullStack, React, BackEnd];
+// var cursos = [FullStack, BackEnd, React,Sql];
+var cursos = [FullStack, BackEnd, React];
 //Fin carga de cursos
 localStorage.setItem('articulos',JSON.stringify(articulos));
 localStorage.setItem('workshops',JSON.stringify(workshops));
