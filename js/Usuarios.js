@@ -23,13 +23,18 @@ function addUsuario(event){
     let email = document.getElementById('email').value;
     let nombre = document.getElementById('usuario').value;
     let contrasena = document.getElementById('contrasena').value;
+    let contrasena2 = document.getElementById('contrasena2').value;
     if(existe(email)){
         document.getElementById('mensaje').innerHTML = '<div class="alert alert-danger">El correo ya fué registrado.</div>';
     }else{
-        let newUsu = new Usuario('',nombre,email,contrasena);
-        usuarios.push(newUsu);
-        localStorage.setItem('usuarios',JSON.stringify(usuarios));
-        window.location.href = './login.html';
+        if(contrasena==contrasena2){
+            let newUsu = new Usuario('',nombre,email,contrasena);
+            usuarios.push(newUsu);
+            localStorage.setItem('usuarios',JSON.stringify(usuarios));
+            window.location.href = './login.html';
+        }else{
+            document.getElementById('mensaje').innerHTML = '<div class="alert alert-danger">La contraseña no coincide.</div>';
+        }
     }
     
 }
