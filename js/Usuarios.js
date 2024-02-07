@@ -6,12 +6,9 @@ class Usuario {
         this.contrasenia = contrasenia;
         this.productos = [];
     }
-}
-let usuarios = localStorage.getItem('usuarios');
-usuarios.push(administrador);
-localStorage.setItem('usuarios',JSON.stringify(usuarios));
+};
 
-usuarios = JSON.parse(localStorage.getItem('usuarios'));
+let usuarios = JSON.parse(localStorage.getItem('usuarios'));
 document.getElementById('regForm').addEventListener('submit',addUsuario,false);
 let usuarioActual = localStorage.getItem('usuario');
 if(usuarioActual){
