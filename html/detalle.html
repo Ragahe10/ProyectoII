@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Se establece la informacion que usan los buscadores, titulo de ela pestaña, link de css, favicon-->
 
     <!--META (metadatos) brindan informacion al los buscadores sobre el sitio-->
-    <meta charset="UTF-8">  <!--Establece que nuestro sitio utiliza caracteres en español-->
+    <meta charset="UTF-8"> <!--Establece que nuestro sitio utiliza caracteres en español-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Christian, Ramiro, Nicolas">   <!--Establece el autor del sitio-->
+    <meta name="author" content="Christian, Ramiro, Nicolas"> <!--Establece el autor del sitio-->
     <!--description : Establece la descripcion para el buscado-->
     <meta name="description" content="e-commerce">
     <!--keywords : Establece palabras claves para el buscador-->
     <meta name="keywords" content="...">
 
-    
-    <title>Primer Web</title>  <!--Indica el titulo de la pestaña del navegador-->
-    
+
+    <title>Primer Web</title> <!--Indica el titulo de la pestaña del navegador-->
+
     <link rel="icon" href="../media/img/logo.png"> <!--Establece el icono o favicon que tendrá nuestra web-->
-    
+
     <!--BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
     <!-- FIN BOOTSTRAP -->
-    <link rel="stylesheet" href="../css/style.css"> <!--Vinculo con la hoja de estilos-->
+    <link rel="stylesheet" href="/css/detalle.css"> <!--Vinculo con la hoja de estilos-->
 </head>
+
 <body>
     <header class="position-sticky sticky-top">
         <nav class="navbar navbar-expand-lg border-body" data-bs-theme="dark" style="background-color: #9c0000;">
@@ -33,8 +37,9 @@
                 <a class="navbar-brand" href="../index.html">
                     <img src="/media/img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -72,16 +77,73 @@
                         </ul>
                     </ul>
                     <form class="d-flex mx-3" role="search">
-                        <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2 bg-light" type="search" placeholder="Search"
+                            aria-label="Search">
                         <button class="btn btn-secondary" type="submit">Search</button>
-                    </form><hr>
+                    </form>
+                    <hr>
                     <div id="cont-usu">
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="contenedorTarjetas">
+            <div class="imagenProducto">
+                <h2>Mate de aluminio Rolling code</h2>
+                <br>
+                <br>
+                <img src="/media/img/mate.jpg" alt="Imagen Mate">
+            </div>
+            <div class="descripcionProducto"><h2>Mate Rolling code school</h2>
+            <p>Con este mate ya tenes la compañia perfecta para pasar muchas horas codeando. 
+                Confeccionado integramente en aluminio y con el mejor tratamiento de pintura para garantizar durabilidad.
+            </p>
+            <h2>$7000</h2>
+            <a href="#" class="btn btn-primary">comprar</a>
+            <h6>Stock disponible 1500 unidades</h6>
+            </div>
+            <div class="contenedorMasOpciones">
+                <div class="card" style="width: 18rem;">
+                    <img src="/media/img/cuaderno.jpg" class="card-img-top" alt="Imagen cuaderno">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuaderno anotador</h5>
+                        
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/media/img/gorra.jpg" class="card-img-top" alt="imagen Gorra">
+                    <div class="card-body">
+                        <h5 class="card-title">Gorra </h5>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/media/img/calcomania.jpg" class="card-img-top" alt="Imagen Calcomania">
+                    <div class="card-body">
+                        <h5 class="card-title">Calcomanias surtidas</h5>
+                        
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="/media/img/taza.jpg" class="card-img-top" alt="Imagen Taza">
+                    <div class="card-body">
+                        <h5 class="card-title">Taza Mágica</h5>
+                        
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </main>
     <footer class="bg-dark text-light pt-4  px-4 w-100">
         <section class="d-flex flex-row justify-content-around flex-wrap mx-4">
             <article class="logo text-center">
@@ -91,10 +153,14 @@
             </article>
             <article class="redes-sociales">
                 <h4 class="text-danger">Nuestras redes</h4>
-                <a class="fs-3 m-2 text-light" href="https://www.instagram.com/rollingcodeschool/" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a class="fs-3 m-2 text-light" href="https://www.facebook.com/RollingCodeSchool/" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a class="fs-3 m-2 text-light" href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                <a class="fs-3 m-2 text-light" href="https://www.gmail.com/" target="_blank"><i class="bi bi-envelope"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.instagram.com/rollingcodeschool/" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.facebook.com/RollingCodeSchool/" target="_blank"><i
+                        class="bi bi-facebook"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.twitter.com/" target="_blank"><i
+                        class="bi bi-twitter-x"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.gmail.com/" target="_blank"><i
+                        class="bi bi-envelope"></i></a>
             </article>
             <article>
                 <h4 class="text-danger">Información</h4>
@@ -120,4 +186,5 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
