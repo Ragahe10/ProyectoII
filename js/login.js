@@ -12,6 +12,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
     if (usuarioValido) {
         localStorage.setItem('usuario', JSON.stringify({
+            rol: usuarioValido.rol,
             nombre: usuarioValido.nombre,
             email: usuarioValido.email,
             productos: usuarioValido.productos

@@ -1,12 +1,30 @@
+function getBaseUrl() {
+    let baseUrl = window.location.href.split('/').slice(0, -1).join('/');
+    return baseUrl.endsWith('/html') ? baseUrl : baseUrl + '/html';
+}
+
 function actualizarInterfaz() {
     let usuarioActual = JSON.parse(localStorage.getItem('usuario'));
+    let baseUrl = getBaseUrl()
     if (usuarioActual) {
-        document.getElementById('cont-usu').innerHTML = `
-            <span class="text-light mx-2">¡Hola, ${usuarioActual.nombre}!</span>
-            <a class="btn btn-outline-light mx-1" href="#" onclick="cerrarSesion()" title="Cerrar Sesión">
-                <i class="bi bi-door-closed"></i> Cerrar Sesión
-            </a>
-        `;
+        if(usuarioActual.rol !== 'Administrador'){
+            document.getElementById('cont-usu').innerHTML = `
+                <span class="text-light mx-2">¡Hola, ${usuarioActual.nombre}!</span>
+                <a class="btn btn-outline-light mx-1" href="#" onclick="cerrarSesion()" title="Cerrar Sesión">
+                    <i class="bi bi-door-closed"></i> Cerrar Sesión
+                </a>
+            `;
+        }else{
+            document.getElementById('cont-usu').innerHTML = `
+                <span class="text-light mx-2">¡Hola, ${usuarioActual.nombre}!</span>
+                <a class="btn btn-outline-light mx-1" href="#" onclick="cerrarSesion()" title="Cerrar Sesión">
+                    <i class="bi bi-door-closed"></i> Cerrar Sesión
+                </a>
+                <a class="btn btn-outline-light mx-1" href="${baseUrl}/administracion.html" title="Administracion">
+                    <i class="bi bi-wrench-adjustable-circle-fill"></i>
+                </a>
+            `;
+        }
     }else{
         document.getElementById('cont-usu').innerHTML = `
         <a class="btn btn-outline-secondary " href="../html/registro.html" title="Sig Up">

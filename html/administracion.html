@@ -81,11 +81,130 @@
             </div>
         </nav>
     </header>
-    <main></main>
-    <footer class="bg-dark text-light pt-4  px-4 w-100">
+    <main>
+        <h1 class="text-center text-danger fw-bolder pt-4">ADMINISTRACION</h1>
+        <section class="mx-5 p-4">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-danger fw-bolder" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#Productos" aria-expanded="false">
+                            Productos
+                        </button>
+                    </h2>
+                    <div id="Productos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="mostrarProductos">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Articulos"
+                                            aria-expanded="false">
+                                            Artículos
+                                        </button>
+                                    </h2>
+                                    <div id="Articulos" class="accordion-collapse collapse" data-bs-parent="#mostrarProductos">
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="mostrarArticulos">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Workshops"
+                                            aria-expanded="false">
+                                            Workshops
+                                        </button>
+                                    </h2>
+                                    <div id="Workshops" class="accordion-collapse collapse" data-bs-parent="#mostrarProductos">
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="mostrarWorkshops"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cursos"
+                                            aria-expanded="false">
+                                            Cursos
+                                        </button>
+                                    </h2>
+                                    <div id="Cursos" class="accordion-collapse collapse" data-bs-parent="#mostrarProductos">
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="mostrarCursos"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center mb-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Agregar Producto
+                            </button>
+    
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="d-flex flex-column justify-content-center" id="formularioProducto" onsubmit="agregarProducto(event)">
+                                                <label class="form-label" for="nombre">Nombre:</label>
+                                                <input class="form-control" type="text" id="nombre" name="nombre" required><br>
+                                        
+                                                <label class="form-label" for="precio">Precio:</label>
+                                                <input class="form-control" type="number" id="precio" name="precio" min="0" step="0.01" required><br>
+                                        
+                                                <label class="form-label" for="categoria">Categoría:</label>
+                                                <select class="form-select" name="categoria" id="categoria">
+                                                    <option value="Articulos" selected>Articulos</option>
+                                                    <option value="Workshops">Workshops</option>
+                                                    <option value="Cursos">Cursos</option>
+                                                </select><br>
+                                        
+                                                <label class="form-label" for="imagen">URL de la Imagen:</label>
+                                                <input class="form-control" type="text" id="imagen" name="imagen" required><br>
+                                        
+                                                <label class="form-label" for="descripcion">Descripción:</label>
+                                                <textarea class="form-control" id="descripcion" name="descripcion" rows="4" required></textarea><br>
+                                        
+                                                <label class="form-label" for="stock">Stock:</label>
+                                                <input class="form-control" type="number" id="stock" name="stock" min="0" required><br>
+                                        
+                                                <button class="btn btn-danger" type="submit">Aceptar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-danger fw-bolder" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#Usuarios" aria-expanded="false">
+                            Usuarios
+                        </button>
+                    </h2>
+                    <div id="Usuarios" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="mostrarUsuarios"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-4 px-4 w-100">
         <section class="d-flex flex-row justify-content-around flex-wrap mx-4">
             <article class="logo text-center">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="../media/img/logo.png" alt="Logo" class="d-inline-block align-text-top" width="200px">
                 </a>
             </article>
@@ -103,22 +222,22 @@
                 <a class="text-light" href="./404.html">Términos y condiciones</a>
             </article>
             <article>
-                <h4><a class="text-danger nav-link" href="contacto.html">Contacto</a></h4>
+                <h4><a class="text-danger nav-link" href="./contacto.html">Contacto</a></h4>
                 <p><i class="fa-regular fa-envelope"></i> Gral.Paz 576, San Miguel de Tucumán</p>
                 <p><i class="fa-solid fa-phone"></i> 0381339900</p>
                 <p><i class="fa-regular fa-envelope"></i> info@r-commmerce.com</p>
             </article>
         </section>
         <hr>
-        <p class="text-center pb-3">&#169Copyright - MiSitio 2024</p>
+        <p class="text-center pt-3">&#169Copyright - MiSitio 2024</p>
     </footer>
     <!-- SCRIPTS -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/administracion.js"></script>
 </body>
 </html>

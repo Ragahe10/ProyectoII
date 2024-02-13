@@ -14,10 +14,10 @@ function mostrarProductos(contenedor, productos){
     for (let i = 0; i < productos.length; i++) {
         let id = productos[i].codigo;
         if(i==0){
-            contenedor.innerHTML += `<div class="item active" style="background-image: url(${productos[i].imagen});"><div class="item-desc"><h3>${productos[i].nombre}</h3><p>${productos[i].descripcion}</p><a id="prod" class="btn btn-outline-danger px-5" href="#" onclick="verProducto(${id})">Ver</a></div></div>
+            contenedor.innerHTML += `<div class="item active" style="background-image: url(${productos[i].imagen});"><div class="item-desc"><h3>${productos[i].nombre}</h3><p class="descripcion">${productos[i].descripcion}</p><a id="prod" class="btn btn-outline-danger px-5" href="#" onclick="verProducto(${id})">Ver</a></div></div>
             `;    
         }else{
-            contenedor.innerHTML += `<div class="item" style="background-image: url(${productos[i].imagen});"><div class="item-desc"><h3>${productos[i].nombre}</h3><p>${productos[i].descripcion}</p><a id="prod" class="btn btn-outline-danger px-5" href="#" onclick="verProducto(${id})">Ver</a></div></div>
+            contenedor.innerHTML += `<div class="item" style="background-image: url(${productos[i].imagen});"><div class="item-desc"><h3>${productos[i].nombre}</h3><p class="descripcion">${productos[i].descripcion}</p><a id="prod" class="btn btn-outline-danger px-5" href="#" onclick="verProducto(${id})">Ver</a></div></div>
             `;    
         }
     }
