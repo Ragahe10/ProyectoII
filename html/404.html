@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Se establece la informacion que usan los buscadores, titulo de ela pestaña, link de css, favicon-->
+
+    <!--META (metadatos) brindan informacion al los buscadores sobre el sitio-->
+    <meta charset="UTF-8">  <!--Establece que nuestro sitio utiliza caracteres en español-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christian, Ramiro, Nicolas">   <!--Establece el autor del sitio-->
+    <!--description : Establece la descripcion para el buscado-->
+    <meta name="description" content="e-commerce">
+    <!--keywords : Establece palabras claves para el buscador-->
+    <meta name="keywords" content="...">
+
+    
+    <title>Primer Web</title>  <!--Indica el titulo de la pestaña del navegador-->
+    
+    <link rel="icon" href="../media/img/logo.png"> <!--Establece el icono o favicon que tendrá nuestra web-->
+    
+    <!--BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+    <!-- FIN BOOTSTRAP -->
+    <link rel="stylesheet" href="../css/style.css"> <!--Vinculo con la hoja de estilos-->
+    <link rel="stylesheet" href="../css/404.css"> <!--Vinculo con la hoja de estilos-->
+</head>
+<body>
+    <header class="position-sticky sticky-top">
+        <nav class="navbar navbar-expand-lg border-body" data-bs-theme="dark" style="background-color: #9c0000;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../media/img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">
+                                    <i class="bi bi-house-fill"></i>
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">
+                                    <i class="bi bi-person-lines-fill"></i>
+                                    Contacto
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">
+                                    <i class="bi bi-person-arms-up"></i>
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-cart3"></i> Productos
+                                </a>
+                                <ul class="dropdown-menu " style="background-color: #bd0202;">
+                                    <li><a class="dropdown-item" href="./cursos.html">Cursos</a></li>
+                                    <li><a class="dropdown-item" href="./workshops.html">Workshops</a></li>
+                                    <li><a class="dropdown-item" href="./otros.html">Otros</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                    <form class="d-flex mx-3" role="search">
+                        <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-secondary" type="submit">Search</button>
+                    </form><hr>
+                    <div id="cont-usu">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="w-100 p-4">
+        <section class="text-center mx-4">
+            <img src="../media/img/404.avif" alt="404" class="w-50">
+            <h3>Oops... La pagina que estás buscando no existe</h3>
+            <a href="../index.html" class="btn btn-outline-danger px-4 m-2 fs-3">Volver</a>
+        </section>
+    </main>
+    <footer class="bg-dark text-light pt-4  px-4 w-100">
+        <section class="d-flex flex-row justify-content-around flex-wrap mx-4">
+            <article class="logo text-center">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../media/img/logo.png" alt="Logo" class="d-inline-block align-text-top" width="200px">
+                </a>
+            </article>
+            <article class="redes-sociales">
+                <h4 class="text-danger">Nuestras redes</h4>
+                <a class="fs-3 m-2 text-light" href="https://www.instagram.com/rollingcodeschool/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.facebook.com/RollingCodeSchool/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                <a class="fs-3 m-2 text-light" href="https://www.gmail.com/" target="_blank"><i class="bi bi-envelope"></i></a>
+            </article>
+            <article>
+                <h4 class="text-danger">Información</h4>
+                <a class="text-light" href="./404.html">Reservas</a><br>
+                <a class="text-light" href="./404.html">Política de privacidad</a><br>
+                <a class="text-light" href="./404.html">Términos y condiciones</a>
+            </article>
+            <article>
+                <h4><a class="text-danger nav-link" href="contacto.html">Contacto</a></h4>
+                <p><i class="fa-regular fa-envelope"></i> Gral.Paz 576, San Miguel de Tucumán</p>
+                <p><i class="fa-solid fa-phone"></i> 0381339900</p>
+                <p><i class="fa-regular fa-envelope"></i> info@r-commmerce.com</p>
+            </article>
+        </section>
+        <hr>
+        <p class="text-center pb-3">&#169Copyright - MiSitio 2024</p>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
