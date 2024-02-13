@@ -1,4 +1,4 @@
-.contenedorTarjetas{
+/* .contenedorTarjetas{
     
     display: flex;
     flex-wrap: wrap;
@@ -66,5 +66,32 @@ margin: auto;
         margin: 30px 30px 30px 60px;
     }
 
-
+} */
+#imagen img{
+    width: 100%;
+}
+@media(max-width: 767px){
+    #imagen{
+        width: 100vw !important;
+    }
+    #detalle h2{
+        font-size: 2em;
+    }
+    #detalle a{
+        width: 100%;
+    }
+}
+@media(min-width: 768px){
+    main section{
+        width: 100vw;
+    }
+    #detalle{
+        width: 50%;
+    }
+    #detalle h2{
+        font-size: 2em;
+    }
+    #detalle a{
+        width: 100%;
+    }
 }
