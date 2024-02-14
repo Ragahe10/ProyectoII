@@ -13,7 +13,7 @@ function cargarBusqueda(){
     let productos = [...filterArticulos, ...filterWorkshops, ...filterCursos]
 
     if(productos.length >0){
-        buscados.innerHTML ='';
+        buscados.innerHTML = '';
         for (let i = 0; i < productos.length; i++) {
             if(productos[i].imagen.includes('media/')){
                 buscados.innerHTML += `
