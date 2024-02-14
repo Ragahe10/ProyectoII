@@ -70,6 +70,9 @@ margin: auto;
 #imagen img{
     width: 100%;
 }
+main section hr{
+    border: #ff2600 solid 2px;
+}
 @media(max-width: 767px){
     #imagen{
         width: 100vw !important;

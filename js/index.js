@@ -1,7 +1,7 @@
 var articulos = JSON.parse(localStorage.getItem('articulos'));
 var workshops = JSON.parse(localStorage.getItem('workshops'));
 var cursos = JSON.parse(localStorage.getItem('cursos'));
-console.log(articulos)
+
 var divArticulos = document.getElementById('articulos');
 var divWS = document.getElementById('workshops');
 var divCursos = document.getElementById('cursos');

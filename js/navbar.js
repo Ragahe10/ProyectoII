@@ -11,14 +11,14 @@ function actualizarInterfaz() {
             document.getElementById('cont-usu').innerHTML = `
                 <span class="text-light mx-2">¡Hola, ${usuarioActual.nombre}!</span>
                 <a class="btn btn-outline-light mx-1" href="#" onclick="cerrarSesion()" title="Cerrar Sesión">
-                    <i class="bi bi-door-closed"></i> Cerrar Sesión
+                    <i class="bi bi-door-closed"></i>
                 </a>
             `;
         }else{
             document.getElementById('cont-usu').innerHTML = `
                 <span class="text-light mx-2">¡Hola, ${usuarioActual.nombre}!</span>
                 <a class="btn btn-outline-light mx-1" href="#" onclick="cerrarSesion()" title="Cerrar Sesión">
-                    <i class="bi bi-door-closed"></i> Cerrar Sesión
+                    <i class="bi bi-door-closed"></i>
                 </a>
                 <a class="btn btn-outline-light mx-1" href="${baseUrl}/administracion.html" title="Administracion">
                     <i class="bi bi-wrench-adjustable-circle-fill"></i>
@@ -42,6 +42,14 @@ function cerrarSesion() {
     actualizarInterfaz();
     location.reload()
 }
-
+document.getElementById('buscar').addEventListener('submit',buscador,false);
+function buscador(event){
+    event.preventDefault();
+    let busqueda = document.getElementById('busqueda');
+    if(busqueda.value.length >0){
+        localStorage.setItem('busqueda',busqueda.value);
+        location.href=getBaseUrl()+'/buscar.html'
+    }
+}
 // Al cargar la página, actualizar la interfaz
 window.onload = actualizarInterfaz;

@@ -25,6 +25,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
     <!-- FIN BOOTSTRAP -->
     <link rel="stylesheet" href="../css/style.css"> <!--Vinculo con la hoja de estilos-->
+    <link rel="stylesheet" href="../css/buscar.css"> <!--Vinculo con la hoja de estilos-->
 </head>
 <body>
     <header class="position-sticky sticky-top">
@@ -59,7 +60,7 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <i class="bi bi-cart3"></i> Productos
                                 </a>
@@ -81,7 +82,14 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section>
+            <h2 class="text-secondary text-center">Resultados de busqueda</h2>
+            <div id="buscados" class="w-100">
+                <p class="text-secondary text-center">sin resultados</p>
+            </div>
+        </section>
+    </main>
     <footer class="bg-dark text-light py-4 px-4 w-100">
         <section class="d-flex flex-row justify-content-around flex-wrap mx-4">
             <article class="logo text-center">
@@ -113,12 +121,12 @@
         <p class="text-center pt-3">&#169Copyright - MiSitio 2024</p>
     </footer>
     <!-- SCRIPTS -->
+    <script src="../js/navbar.js"></script>
     <script src="../js/buscar.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="../js/navbar.js"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 </html>
